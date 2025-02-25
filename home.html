@@ -8,9 +8,15 @@
 
     <!-- styles  -->
     <link rel="icon" type="image/x-icon" href="./assets/images/header-logo.svg">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.scss">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+    <link rel="icon" type="image/x-icon" href="./assets/images/header-logo.svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Icons">
+    <!-- <link rel="stylesheet" href="./assets/css/kkone-news-compress.min.css"> -->
+    <link rel="stylesheet" href="./assets/css/style.min.css">
 </head>
 
 <body>
@@ -19,7 +25,7 @@
     <div class="header d-flex align-items-center justify-content-between">
         <div class="header-logo d-flex align-items-center">
             <div class="logo mt-3">
-                <img src="img/Logo.avif" alt="">
+                <img src="assets/img/Logo.avif" alt="">
             </div>
             <div class="logo-name mt-3">
                 <h1 class="mb-0">UNiiTE</h1>
@@ -30,19 +36,20 @@
             <button class="menu-btn">Menu</button>
         </div> -->
         <div class="sidebar">
-            <button class="close-btn">&times;</button>
+            <button class="close-btn">Close</button>
             <ul class="menu-list">
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Contact</a></li>
                 <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
                 <li><a href="#">FAQ</a></li>
+                <li><a href="#">Contact</a></li>
             </ul>
         </div>
-        
+
         <div class="sidebar-menu">
             <button class="menu-btn">Menu</button>
         </div>
-        
+
     </div>
 
     <!-- Hero Section  -->
@@ -57,7 +64,7 @@
     <div class="container">
         <div class="uniite-detail d-flex align-items-center justify-content-center pt-5">
             <div class="uniite-det-img">
-                <img src="img/uniite-det-img.avif" alt="">
+                <img src="assets/img/uniite-det-img.avif" alt="">
             </div>
             <div class="uniite-det-info">
                 <h5 class="text-center text-decoration-underline">Are you:</h5>
@@ -75,31 +82,38 @@
                 </p>
             </div>
         </div>
-         <!-- Why it Works Section  -->
+        <!-- Why it Works Section  -->
         <div class="whyit-works">
             <h5 class="whyit-title">Why It Works</h5>
             <p class="whyit-title-para">Benefits of Matchmaking Service</p>
             <div class="whyit-data-row1 d-flex  d-flex justify-content-evenly">
                 <div class="whyit-data1">
-                    <img src="img/heart-inside-circle-vector-icon-260nw-2583518931.png" style="width: 128px; height: 128px;" alt="">
+                    <img src="assets/img/heart-inside-circle-vector-icon-260nw-2583518931.png"
+                        style="width: 128px; height: 128px;" alt="" class="rotate linear infinite">
                     <p class="whyit-data-para">No messy dates</p>
                 </div>
                 <div class="whyit-data1">
-                    <img src="img/heart-inside-circle-vector-icon-260nw-2583518931.png" style="width: 128px; height: 128px;" alt="">
+                    <img src="assets/img/heart-inside-circle-vector-icon-260nw-2583518931.png"
+                        style="width: 128px; height: 128px;" alt="" class="rotate linear infinite">
                     <p class="whyit-data-para">Stop dating your Phones </p>
-                    <p class="whyit-data-sub-para">No dating your phones – apps want to you stay engaged and stay on it. Plus Integrated AI in most of the apps equates to apps talking to apps without any real life interactions.</p>
+                    <p class="whyit-data-sub-para">No dating your phones – apps want to you stay engaged and stay on it.
+                        Plus Integrated AI in most of the apps equates to apps talking to apps without any real life
+                        interactions.</p>
                 </div>
             </div>
             <div class="whyit-data-row2 d-flex  justify-content-between">
                 <div class="whyit-data1">
-                    <img src="img/heart-inside-circle-vector-icon-260nw-2583518931.png" style="width: 128px; height: 128px;" alt="">
+                    <img src="assets/img/heart-inside-circle-vector-icon-260nw-2583518931.png"
+                        style="width: 128px; height: 128px;" alt="" class="rotate linear infinite">
                     <p class="whyit-data-para">Avoid Choice Overload</p>
                     <p class="whyit-data-sub-para">Only meet compatible dates avoiding Choice Overload</p>
                 </div>
                 <div class="whyit-data1">
-                    <img src="img/heart-inside-circle-vector-icon-260nw-2583518931.png" style="width: 128px; height: 128px;" alt="">
+                    <img src="assets/img/heart-inside-circle-vector-icon-260nw-2583518931.png"
+                        style="width: 128px; height: 128px;" alt="" class="rotate linear infinite">
                     <p class="whyit-data-para">Real Interactions </p>
-                    <p class="whyit-data-sub-para">No instant messaging or chatting. This creates the daily hype of meeting with very little gain and living in constant fear of being ghosted or rejected.</p>
+                    <p class="whyit-data-sub-para">No instant messaging or chatting. This creates the daily hype of
+                        meeting with very little gain and living in constant fear of being ghosted or rejected.</p>
                 </div>
             </div>
         </div>
@@ -112,35 +126,108 @@
         <p class="our-approach-para">For Healthier Connections</p>
         <div class="our-approach-info d-flex align-items-center justify-content-evenly">
             <div class="our-approach-img">
-                <img src="img/Ourapproach-img.avif" style="height: 741px; width: 696px;" alt="">
+                <img src="assets/img/Ourapproach-img.avif" style="height: 741px; width: 696px;" alt="">
             </div>
             <div class="our-approach-data">
-                <div class="whyit-data-row1 d-flex  d-flex justify-content-evenly">
-                    <div class="whyit-data1">
-                        <p class="whyit-data-para">No messy dates</p>
-                        <p class="whyit-data-sub-para">No dating your phones – apps want to you stay engaged and stay on it. Plus Integrated AI in most of the apps equates to apps talking to apps without any real life interactions.</p>
+                <div class="our-approach-data-row1 d-flex  d-flex justify-content-evenly">
+                    <div class="our-approach-data1">
+                        <p class="our-approach-data-para">In-Depth Screening</p>
+                        <p class="our-approach-sub-para">Applicants undergo an extensive screening process, which
+                            includes completing a detailed questionnaire, participating in an interview, and a brief
+                            follow-up with a close friend or family member. This tailored approach helps us to
+                            understand your individual preferences and relationship objectives, ensuring we find matches
+                            that align with your expectations.</p>
 
                     </div>
-                    <div class="whyit-data1">
-                        <p class="whyit-data-para">Stop dating your Phones </p>
-                        <p class="whyit-data-sub-para">No dating your phones – apps want to you stay engaged and stay on it. Plus Integrated AI in most of the apps equates to apps talking to apps without any real life interactions.</p>
+                    <div class="our-approach-data1">
+                        <p class="our-approach-data-para">Background Check</p>
+                        <p class="our-approach-sub-para">Your safety is our priority. Our background verification
+                            ensures every match is genuine and trustworthy, so you can focus on what matters - building
+                            real connections</p>
                     </div>
                 </div>
-                <div class="whyit-data-row2 d-flex  justify-content-between">
-                    <div class="whyit-data1">
-                        <p class="whyit-data-para">Avoid Choice Overload</p>
-                        <p class="whyit-data-sub-para">Only meet compatible dates avoiding Choice Overload</p>
+                <div class="our-approach-data-row2 d-flex  justify-content-between">
+                    <div class="our-approach-data1">
+                        <p class="our-approach-data-para">Privacy</p>
+                        <p class="our-approach-sub-para">Throughout the matchmaking process, your privacy is
+                            prioritized. All personal information is protected using high security standards. Your
+                            details (Names, Contact details and Photos) are shared only with matches you approve,
+                            ensuring you maintain full control.</p>
                     </div>
-                    <div class="whyit-data1">
-                        <p class="whyit-data-para">Real Interactions </p>
-                        <p class="whyit-data-sub-para">No instant messaging or chatting. This creates the daily hype of meeting with very little gain and living in constant fear of being ghosted or rejected.</p>
+                    <div class="our-approach-data1">
+                        <p class="our-approach-data-para">Relationship Coaching</p>
+                        <p class="our-approach-sub-para">We help you define your ideal partner and relationship goals
+                            while guiding you through the journey—supporting you through the challenges and triumphs of
+                            finding the right match.</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <!-- Join Today Section -->
+    <div class="Join-today d-flex align-items-center justify-content-center">
+        <p class="mb-0">Join Today</p>
+    </div>
+    <div class="form-data">
+        <div class="form">
+            <div class="first-name">
+                <p class="mb-2">First Name*</p>
+                <input type="text" class="input-data">
+            </div>
+            <div class="last-name*">
+                <p class="mb-2">Last Name*</p>
+                <input type="text" class="input-data">
+            </div>
+            <div class="email*">
+                <p class="mb-2">Email*</p>
+                <input type="email" class="input-data">
+            </div>
+            <div class="phone">
+                <p class="mb-2">Phone</p>
+                <input type="tel" class="input-data">
+            </div>
+            <div class="message">
+                <p class="mb-2">Message</p>
+                <textarea name="Message" id="" class="input-data"></textarea>
+            </div>
+            <button class="submit-btn"><span class="mx-5">Submit</span></button>
+        </div>
+    </div>
+    </div>
 
-    <script src="main.js"></script>
+    <!-- Footer Section -->
+
+    <!-- <div class="footer row p-5">
+        <div class="info-data col-md-4">
+            <p>123-456-7890</p>
+            <p>info@uniite.co</p>
+        </div>
+        <div class="info-data col-md-4">
+            <p>500 Terry Francine St. San Francisco, CA 94158</p>
+        </div>
+        <div class="info-data col-md-4">
+            <p> Privacy Policy Accessibility Statement​</p>
+            <p>© 2025 Powered and secured by</p>
+        </div>
+    </div> -->
+
+    <div class="footer row p-5 text-white" style="background-color: #D0021B;">
+        <div class="info-data col-md-4 border border-white text-center text-md-start p-4">
+            <p>123-456-7890</p>
+            <p><a href="mailto:info@uniite.co" class="text-white text-decoration-none">info@uniite.co</a></p>
+        </div>
+        <div class="info-data col-md-4 border border-white text-center text-md-start p-4">
+            <p>500 Terry Francine St.<br>San Francisco, CA 94158</p>
+        </div>
+        <div class="info-data col-md-4  border border-white text-center text-md-start p-4">
+            <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a></p>
+            <p><a href="#" class="text-white text-decoration-none">Accessibility Statement</a></p>
+            <p>© 2025 Powered and secured by</p>
+        </div>
+    </div>
+    
+
+    <script src="assets/js/main.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>

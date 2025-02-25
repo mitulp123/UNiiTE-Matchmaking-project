@@ -1,0 +1,279 @@
+@use "../variables.scss" as *;
+/* Sidebar */
+/* Sidebar - Initially Hidden on the Right */
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -50%; /* Move it off-screen to the right */
+    width: 50%;
+    height: 100%;
+    background: rgb(255, 251, 221);
+    color: $primary;
+    transition: right 0.3s ease-in-out;
+    box-shadow: $sidebar-shadow;
+}
+
+/* Show sidebar (Moves from Right to Left) */
+.sidebar.open {
+    right: 0;
+}
+
+/* Close Button */
+.close-btn {
+    background: none;
+    border: none;
+    color: $primary;
+    font-size: $font-24;
+    cursor: pointer;
+    position: absolute;
+    top: $space30;
+    right: $space20; /* Move close button to the left */
+}
+
+.close-btn:hover{
+    text-decoration: underline;
+}
+
+/* Menu List */
+.menu-list {
+    list-style: none;
+    padding: $space120 0 0;
+}
+
+// .menu-list li {
+//     padding: $space15 0;
+// }
+
+
+.menu-list a {
+    color: $primary;
+    text-decoration: none;
+    border-bottom: 1px solid $primary;
+    padding-top: $space10;
+    padding-bottom: $space10;
+    padding-left: $space20;
+    font-size: $font-18;
+    font-weight: 600;
+    display: block;
+}
+
+.menu-list a:active {
+    background: $white;
+    color: $primary;
+}
+
+/* Menu Button */
+.menu-btn {
+    font-family: sans-serif;
+    text-decoration: none;
+    border: none;
+    background: transparent;
+    color: $primary;
+    transform: rotate(90deg);
+    font-size: $font-22;
+    cursor: pointer;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.menu-btn:hover{
+    text-decoration: underline;
+    
+}
+
+/* Hide menu button when sidebar is open */
+.menu-btn.hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.logo-name{
+    color: $primary;
+    font-family: sans-serif;
+    font-size: $font-20;
+}
+
+.title-name {
+    font-size: clamp(30rem, 5vw + 1rem, 8rem);
+    background: linear-gradient(to right, #d70032, #ff1a50); /* Adjust colors as needed */
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    text-align: center;
+}
+
+// .title-name{
+//     font-size: scale(1.5);
+//     background: linear-gradient(to right, #d70032, #ff1a50); /* Adjust colors as needed */
+//     -webkit-background-clip: text;
+//     -webkit-text-fill-color: transparent;
+//     text-align: center;
+// }
+
+.sub-title-name{
+    color: rgba(216, 2, 50, 1);
+    font-size: $font-50;
+    text-align: center;
+}
+
+.join-btn{
+    text-decoration: none;
+    border: none;
+    font-size: $font-20;
+    font-weight: $font-weight-700;
+    padding: $space15 $space20;
+    color: $white;
+    background-color: rgba(216, 2, 50, 1);
+    box-shadow: 0px 3px 0px 0px #7143f0;
+    border-radius: $border-radius-20;
+}
+
+.join-btn:hover{
+    background-color: blueviolet;
+    transition-duration: 1s;
+
+}
+
+.uniite-det-info{
+    padding-left: $space60;
+    color: $primary;
+}
+
+.uniite-para{
+    font-size: $font-16;
+    word-spacing: $space4;
+    width: 463px;
+    color: $primary;
+}
+
+.whyit-title{
+    font-size: $font-120;
+    margin-top: $space30;
+    text-align: center;
+    color: $primary;
+}
+
+.whyit-title-para{
+    font-size: $font-24;
+    text-align: center;
+    color: $primary;
+}
+
+.whyit-data1{
+    border: 1px solid $primary;
+    text-align: center;
+    width: 50%;
+    padding: $space48;
+}
+
+
+.whyit-data-para{
+    font-size: $font-44;
+}
+
+.whyit-data-sub-para{
+    font-size: $font-16;
+    color: $primary;
+    text-align: center;
+}
+
+.rotate {
+    animation: rotation 2s;
+  }
+  
+  .linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }
+
+.our-approach-main{
+    margin-top: $space30;
+    padding-left: $space30;
+    padding-right: $space30;
+    border-top: 1px solid $black;
+    background-color: rgb(255, 251, 221);
+}
+
+.our-approach-title{
+    font-size: $font-120;
+    color: $primary;
+    margin-bottom: $space18;
+}
+
+.our-approach-para{
+    font-size: $font-44;
+    color: $primary;
+    border-bottom: 1px solid $black;
+}
+
+.our-approach-data1{
+    border-right: 1px solid $primary;
+    width: 50%;
+    padding: $space48;
+}
+
+.our-approach-data-para{
+   font-size: $font-24;
+   color: $primary;
+}
+
+.our-approach-sub-para{
+    font-size: $font-16;
+    color: $primary;
+}
+
+.Join-today{
+    font-size: $font-300;
+    color: $primary;
+    background-color: rgb(255, 251, 221);
+}
+
+.form-data{
+    padding: $space30;
+    background-color: rgb(255, 251, 221);
+}
+
+.form{
+    width: 500px;
+    padding: $space20;
+    background-color: $white;
+    text-align: start;
+    margin-left: 35%;
+    border-radius: $border-radius-20;
+}
+
+.input-data{
+    width: 100%;
+    border-radius: $border-radius-5;
+    margin-bottom: $space24;
+}
+
+.submit-btn{
+    padding: 11px 15px;
+    background-color: $primary;
+    color: $white;
+    border-radius: $border-radius-10;
+    border: none;
+}
+
+.footer{
+    background-color: $primary;
+    color: $white;
+    padding: $space20;  
+    font-size: $font-18;
+}
+
+// .info-data{
+//     border: 1px solid $white;
+//     width: 100%;
+// }
